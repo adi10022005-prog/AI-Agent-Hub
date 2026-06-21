@@ -435,12 +435,34 @@ if api_key_configured:
 # ==================== MODULE 1: DASHBOARD ====================
 if module == "Dashboard":
     st.markdown("<div class='agent-header'>🎓 EduAssist AI</div>", unsafe_allow_html=True)
+
     st.markdown(
         "<div class='agent-subtitle'>Welcome to <b>EduAssist AI</b>! This application demonstrates a multi-agent "
         "architecture built using Google's <b>Agent Development Kit (ADK)</b> and the Gemini model framework. "
         "Select an agent module from the sidebar to start experimenting.</div>",
         unsafe_allow_html=True
     )
+
+    # 👇 ADD THIS
+    st.markdown("---")
+
+    st.markdown("### 🔄 Multi-Agent Workflow")
+
+    st.info("""
+🎯 **How EduAssist AI Works**
+
+1️⃣ **Planner Agent** → Creates a personalized study roadmap.
+
+2️⃣ **Research Agent** → Finds reliable information and learning content.
+
+3️⃣ **Summary Agent** → Converts research into concise notes.
+
+4️⃣ **Quiz Agent** → Generates practice questions to test understanding.
+
+5️⃣ **Resource Agent** → Recommends books, videos, websites, and courses.
+
+💡 **Agents can be used individually or as a complete learning workflow.**
+""")
 
     st.markdown("<div class='sidebar-section-label'>Quick Access</div>", unsafe_allow_html=True)
 
